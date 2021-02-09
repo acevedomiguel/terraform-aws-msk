@@ -19,7 +19,7 @@ provider "aws" {
 }
 
 module "msk" {
-  source                     = "git::https://github.com/Shogan/terraform-aws-msk.git?ref=master"
+  source                     = "git::https://github.com/acevedomiguel/terraform-aws-msk.git?ref=master"
   namespace                  = "eg"
   stage                      = "dev"
   name                       = "msk"
