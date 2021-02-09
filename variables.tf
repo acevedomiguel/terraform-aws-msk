@@ -72,3 +72,4 @@ variable "kafka_version" {
   type = string
   description = "Kafka version to deploy"
   default = "2.4.1"
+}
