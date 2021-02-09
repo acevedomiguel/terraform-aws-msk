@@ -67,3 +67,8 @@ variable "ebs_volume_size" {
   description = "EBS volumes for data storage in GB"
   default     = 10
 }
+
+variable "kafka_version" {
+  type = string
+  description = "Kafka version to deploy"
+  default = "2.4.1"
