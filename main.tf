@@ -15,7 +15,7 @@ resource "aws_kms_key" "kms" {
 
 resource "aws_msk_cluster" "default" {
   cluster_name           = module.label.id
-  kafka_version          = "2.2.1"
+  kafka_version          = var.kafka_version == "" ? "2.4.1" : var.kafka_version
   number_of_broker_nodes = var.broker_node_instance_count
 
   broker_node_group_info {
